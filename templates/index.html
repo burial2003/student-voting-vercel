@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Student Voting System</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .container {
+            background: white;
+            width: 500px;
+            max-width: 90%;
+            margin: auto;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            width: 80%;
+            padding: 15px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .student1 {
+            background: #3498db;
+            color: white;
+        }
+
+        .student2 {
+            background: #e67e22;
+            color: white;
+        }
+
+        .student3 {
+            background: #27ae60;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Voting System</h1>
+
+    <p>Select a student to cast your vote:</p>
+
+    <form method="POST" action="/">
+
+        <button class="student1"
+                type="submit"
+                name="vote"
+                value="student1">
+            Student 1
+        </button>
+
+        <button class="student2"
+                type="submit"
+                name="vote"
+                value="student2">
+            Student 2
+        </button>
+
+        <button class="student3"
+                type="submit"
+                name="vote"
+                value="student3">
+            Student 3
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
